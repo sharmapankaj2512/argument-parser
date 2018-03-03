@@ -21,4 +21,18 @@ public class ParserTest {
         //THEN
         assertThat(arguments).isEqualTo(singletonList(new BooleanArgument('l', "logging")));
     }
+
+    @Test
+    public void shouldBeAbleToParseAStringFlag() {
+        //GIVEN
+        Schema schema = new Schema(StringArgumentBuilder.of('d', "directory"));
+
+        CommandLineParser parser = new CommandLineParser(schema);
+
+        //WHEN
+        List<Argument> arguments = parser.parse("-d /usr/temp");
+
+        //THEN
+        assertThat(arguments).isEqualTo(singletonList(new StringArgument('d', "directory", "/usr/temp")));
+    }
 }

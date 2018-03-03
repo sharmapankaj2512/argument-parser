@@ -10,6 +10,11 @@ public class BooleanArgumentBuilder implements ArgumentBuilder {
     }
 
     @Override
+    public ArgumentBuilder withValue(String value) {
+        return this;
+    }
+
+    @Override
     public Character flag() {
         return flag;
     }

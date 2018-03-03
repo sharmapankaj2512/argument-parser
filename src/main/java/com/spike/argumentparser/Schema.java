@@ -8,15 +8,12 @@ public class Schema {
 
     private HashMap<Character, ArgumentBuilder> flags = new HashMap<>();
 
-    public Schema(BooleanArgumentBuilder ...argumentBuilders) {
+    public Schema(ArgumentBuilder... argumentBuilders) {
         asList(argumentBuilders).forEach(builder -> flags.put(builder.flag(), builder));
     }
 
-    public Argument argumentFor(char flag) {
+    public Argument argumentFor(char flag, String value) {
         ArgumentBuilder argumentBuilder = flags.get(flag);
-        if (argumentBuilder instanceof BooleanArgumentBuilder) {
-            return argumentBuilder.build();
-        }
-        return null;
+        return argumentBuilder.withValue(value).build();
     }
 }
