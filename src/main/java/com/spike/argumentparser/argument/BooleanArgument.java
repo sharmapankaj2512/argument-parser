@@ -1,4 +1,4 @@
-package com.spike.argumentparser;
+package com.spike.argumentparser.argument;
 
 import java.util.Objects;
 

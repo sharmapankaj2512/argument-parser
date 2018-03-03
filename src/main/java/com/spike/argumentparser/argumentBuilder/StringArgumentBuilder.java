@@ -1,4 +1,7 @@
-package com.spike.argumentparser;
+package com.spike.argumentparser.argumentBuilder;
+
+import com.spike.argumentparser.argument.Argument;
+import com.spike.argumentparser.argument.StringArgument;
 
 public class StringArgumentBuilder implements ArgumentBuilder {
     private final Character flag;

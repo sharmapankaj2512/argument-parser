@@ -1,4 +1,7 @@
-package com.spike.argumentparser;
+package com.spike.argumentparser.argumentBuilder;
+
+import com.spike.argumentparser.argument.Argument;
+import com.spike.argumentparser.argument.BooleanArgument;
 
 public class BooleanArgumentBuilder implements ArgumentBuilder {
     private final char flag;

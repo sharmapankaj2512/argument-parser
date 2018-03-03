@@ -1,5 +1,8 @@
 package com.spike.argumentparser;
 
+import com.spike.argumentparser.argument.Argument;
+import com.spike.argumentparser.argumentBuilder.ArgumentBuilder;
+
 import java.util.HashMap;
 
 import static java.util.Arrays.asList;

@@ -1,5 +1,7 @@
 package com.spike.argumentparser;
 
+import com.spike.argumentparser.argument.Argument;
+
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

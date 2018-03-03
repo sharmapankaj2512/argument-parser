@@ -1,5 +1,10 @@
 package com.spike.argumentparser;
 
+import com.spike.argumentparser.argument.Argument;
+import com.spike.argumentparser.argument.BooleanArgument;
+import com.spike.argumentparser.argument.StringArgument;
+import com.spike.argumentparser.argumentBuilder.BooleanArgumentBuilder;
+import com.spike.argumentparser.argumentBuilder.StringArgumentBuilder;
 import org.junit.Test;
 
 import java.util.List;
