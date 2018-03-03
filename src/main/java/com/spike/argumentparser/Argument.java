@@ -1,4 +1,5 @@
 package com.spike.argumentparser;
 
-public interface Argument {
+public interface Argument<T> {
+    T value();
 }

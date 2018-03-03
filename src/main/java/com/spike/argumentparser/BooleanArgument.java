@@ -2,13 +2,18 @@ package com.spike.argumentparser;
 
 import java.util.Objects;
 
-public class BooleanArgument implements Argument {
+public class BooleanArgument implements Argument<Boolean> {
     private final char flag;
     private final String shortHand;
 
     public BooleanArgument(char flag, String description) {
         this.flag = flag;
         this.shortHand = description;
+    }
+
+    @Override
+    public Boolean value() {
+        return true;
     }
 
     @Override
